@@ -1,7 +1,6 @@
 import random
 
-name = "Bot"
-weather = "cloudy"
+bot_template = "Bot : {0}"
 
 responses = {
     'statement': [
@@ -19,36 +18,26 @@ responses = {
     "default": ["default message"]
 }
 
-def send_message(message):
-    # Check if the message is in the responses
-    if message in responses:
-        # Return the matching message
-        bot_message = responses[message]
-    else:
-        # Return the "default" message
-        bot_message = responses["default"]
-    return bot_message
-
-
 def respond(message):
-    # Check for a question mark
-    if '?' in message:
-        # Return a random question response
+    
+    if message.endswith('?'):
         return random.choice(responses['question'])
-    # Return a random statement response
     return random.choice(responses['statement'])
 
-# Send messages ending in a question mark
-send_message("what's today's weather?")
-send_message("what's today's weather?")
-# Send messages which don't end with a question mark
-send_message("I love building chatbots")
-send_message("I love building chatbots")
+def send_message(message):
+    respond(message)
+    print(bot_template.format(responses))
+
+# Test the functions
+# print(respond("what's today's weather?"))
+# print(respond("what's today's weather?"))
+# print(respond("I love building chatbots"))
+# print(respond("I love building chatbots"))
 
 while True:
-    messages = input('USER: ')
-    if messages.lower() == 'bye':
+    user_message = input('USER: ')
+    if user_message.lower() == 'bye':
         print('BOT: Good BYE !')
         break
 
-    print('BOT:', send_message(messages))
+    print('BOT:', send_message(user_message))
