@@ -37,7 +37,7 @@ def match_rule(rules, message):
     return response.format(phrase)
 
 # Test match_rule
-print(match_rule(rules, "do you remember your last birthday"))
+# print(match_rule(rules, "do you remember your last birthday"))
 
 # Define replace_pronouns()
 def replace_pronouns(message):
@@ -57,19 +57,15 @@ def replace_pronouns(message):
     return message
 
 # Test replace_pronouns
-print(replace_pronouns("my last birthday"))
-print(replace_pronouns("go with me to Florida"))
-print(replace_pronouns("I had my own castle"))
+# print(replace_pronouns("my last birthday"))
+# print(replace_pronouns("go with me to Florida"))
+# print(replace_pronouns("I had my own castle"))
 
-# Define respond()
 def respond(message):
-    # Call match_rule
     response, phrase = match_rule(rules, message), None
 
     if '{0}' in response:
-        # Replace the pronouns in the phrase
         phrase = replace_pronouns(phrase)
-        # Include the phrase in the response
         response = response.format(phrase)
     
     return response
@@ -84,4 +80,4 @@ def send_message(message):
 send_message("do you remember my last birthday")
 send_message("do you think humans should be worried about AI")
 send_message("I want a robot friend")
-send_message("what if you could be anything you wanted")
+send_message("if you could be anything you wanted")
