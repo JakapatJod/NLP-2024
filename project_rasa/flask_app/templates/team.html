@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link href="{{ url_for('static',filename='css/M_team.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/mod.css">
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="{{ url_for('index') }}"><img src="static/img/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('check') }}">Main</a></li>
+                        <li><a href="{{ url_for('chatbot') }}">Chatbot</a></li>
+                        <li><a href="{{ url_for('team') }}">Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+<!--HEADER-->
+<!--INFO-->
+
+    <div class="container">
+            <h1 class="heading"><span>My</span>Our Team Chef</h1>
+        
+            <div class="profiles">
+                <div class="profile">
+                    <img src="static/img/Profile-3.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Jakapat Joddungchan</h3>
+                    <h4>CEO-Chief Executive Officer</h5>
+                </div>
+                <div class="profile">
+                    <img src="static/img/profile-1.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Gordon Ramsay</h3>
+                    <h4>Executive chef</h4>
+                </div>
+                <div class="profile">
+                    <img src="static/img/profile-2.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Ian Kittichai</h3>
+                    <h4>Thai Chef</h5>
+                </div>
+            </div>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="static/img/profile-4.jpg" class="profile-img">
+                    <h3 class="user-name">Willment Leong</h3>
+                    <h4>Pastry Chef</h4>
+                </div>
+                <div class="profile">
+                    <img src="static/img/profile-5.jpg" class="profile-img">
+                    <h3 class="user-name">Jay Fai</h3>
+                    <h4>Sous Chef</h4>
+                </div>
+                <div class="profile">
+                    <img src="static/img/profile-6.jpg" class="profile-img">
+                    <h3 class="user-name">Jamie Oliver</h3>
+                    <h4>Head Chef</h4>
+                </div>
+            </div>
+    </div>
+<!------footer------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>ติดตั้งบนแอป Android และ IOS</p>
+                    <div class="app-logo">
+                        <a href="https://www.android.com/"><img src="static/img/play-store.png"></a>
+                        <a href="https://www.apple.com/ios/ios-15/"><img src="static/img/app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>" เว็บร้านอาหารสเต๊ก Jakapat "</h3>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul class="link">
+                        <li><a href="https://kmutnb.ac.th/">KMUTNB</a></li>
+                        <li><a href="https://www.facebook.com/FITM.KMUTNB/">FITM</a></li>
+                        <li><a href="https://www.facebook.com/INEKMUTNB/">INE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Joddna">Facbook</a></li>
+                        <li><a href="https://www.instagram.com/jod_jakapat/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCcD6g_TOz5Z-ugJgROGhbYw">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Jakapat Steak house</p>
+        </div>
+    </div>
+</body>
+</html>

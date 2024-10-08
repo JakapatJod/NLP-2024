@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: restaurant
+  steps:
+  - intent: bot_restaurant
+  - action: utter_restaurant
+  - intent: bot_restaurant2
+  - action: utter_restaurant2
+  - intent: bot_restaurant3payment
+  - action: utter_restaurant3
+  - intent: bot_restaurant3payment
+  - action: utter_restaurant3
+  - intent: bot_restaurant4
+  - action: utter_restaurant4
