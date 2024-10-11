@@ -99,14 +99,12 @@ nlu:
   examples: |
     - Can you advise on the doneness of the steak?
 
-- intent: bot_restaurant2
-  examples: |
-    - Can you advise on the doneness of the steak?
-
 - intent: bot_restaurant3payment
   examples: |
     - What payment channels are there?
+    - I want to pay via Qrcode.
 
 - intent: bot_restaurant4
   examples: |
     - I want to pay in cash.
+    - I want to pay by credit card.

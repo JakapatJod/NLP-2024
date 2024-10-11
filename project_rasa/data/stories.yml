@@ -37,7 +37,5 @@ stories:
   - action: utter_restaurant2
   - intent: bot_restaurant3payment
   - action: utter_restaurant3
-  - intent: bot_restaurant3payment
-  - action: utter_restaurant3
   - intent: bot_restaurant4
   - action: utter_restaurant4

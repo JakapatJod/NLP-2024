@@ -3,7 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-RASA_URL = "http://localhost:5005/chatbot/webhooks/rest/webhook"
+# RASA_URL points to Rasa's default port 5005
+RASA_URL = "http://localhost:5005/webhooks/rest/webhook"
 
 @app.route('/check')
 def check():
@@ -30,4 +31,5 @@ def team():
     return render_template('team.html')
 
 if __name__ == "__main__":
+    # Run Flask on port 5000 to avoid conflict with Rasa
     app.run(port=5000)

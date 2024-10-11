@@ -9,7 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
   - bot_restaurant
-
+  - bot_restaurant2
+  - bot_restaurant3payment
+  - bot_restaurant4
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -28,21 +30,23 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by JakapatSteakhouse."
 
   utter_restaurant:
   - text: "Today I have a very delicious menu for you. Are you interested?"
   - text: "There's great meat in our kitchens today"
+  - text: "Today we have beef steak from Germany."
+  - text: "Today we have pork steak from Australia."
 
   utter_restaurant2:
   - text: "I would recommend that you cook the steak around medium rare"
-
 
   utter_restaurant3:
   - text: "Our shop has cash payment or you want to pay by scanning QRCODE Payment."
 
   utter_restaurant4:
   - text: "Agreed, customer wants to pay in cash. This is the amount that must be paid according to the bill. Thank you."
+  - text: "Thank you for your payment."
 
 session_config:
   session_expiration_time: 60
